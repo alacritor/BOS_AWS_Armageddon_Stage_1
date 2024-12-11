@@ -28,14 +28,13 @@ echo "
 </head>
 <body>
 <div>
-<h1>AWS Instance Details</h1>
-<h1>Samurai Katana</h1>
-
+<h1>A Group Collaboration between the Brotherhood of Steel, Dundin Mifflin Cloud, and Cloudy Bills</h1>
+<h1>In Dust, We Trust</h1>
+<h2>Cloud Avengers Assemble!</h2>
 <br>
 # insert an image or GIF
-<img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+<iframe src="https://giphy.com/embed/YzU8NQXqtIKqc" width="353" height="480" style="" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/transparent-comics-YzU8NQXqtIKqc">via GIPHY</a></p>
 <br>
-
 <p><b>Instance Name:</b> $(hostname -f) </p>
 <p><b>Instance Private Ip Address: </b> ${local_ipv4}</p>
 <p><b>Availability Zone: </b> ${az}</p>

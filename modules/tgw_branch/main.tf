@@ -110,4 +110,11 @@ resource "aws_ec2_transit_gateway_route" "to_other_region" {
   destination_cidr_block         = var.vpc_cidr
   transit_gateway_route_table_id = data.aws_ec2_transit_gateway_route_table.tokyo.id
   transit_gateway_attachment_id  = aws_ec2_transit_gateway_peering_attachment.tokyo.id
+
+
+  depends_on = [aws_ec2_transit_gateway_peering_attachment.tokyo, aws_ec2_transit_gateway_peering_attachment_accepter.main,
+    data.aws_ec2_transit_gateway_peering_attachment.main
+  ]
+  
+  
 }

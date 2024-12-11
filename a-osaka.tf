@@ -11,6 +11,7 @@ module "osaka_network" {
   vpc_cidr            = var.osaka_config.vpc_cidr
   private_subnet_cidr = var.osaka_config.private_subnet_cidr
   tgw_id              = module.osaka_tgw_branch.tgw_id
+  
 }
 
 # module "osaka_frontend" {

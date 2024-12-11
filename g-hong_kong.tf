@@ -32,7 +32,7 @@ module "hong_kong_backend" {
   vpc_id                = module.hong_kong_network.vpc_id
   private_subnet_ids    = module.hong_kong_network.private_subnet_ids
   frontend_sg_id        = module.hong_kong_frontend.frontend_sg_id
-  backend_instance_type = var.backend_config.backend_instance_type[1]
+  backend_instance_type = var.backend_config.backend_instance_type[1] #Using T.3 Micro for Hong Kong due to geographical hardware limitations
   desired_capacity      = var.backend_config.desired_capacity
   scaling_range         = var.backend_config.scaling_range
   user_data             = var.backend_config.user_data
