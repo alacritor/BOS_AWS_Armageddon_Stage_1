@@ -32,7 +32,7 @@ module "sao_paulo_backend" {
   vpc_id                = module.sao_paulo_network.vpc_id
   private_subnet_ids    = module.sao_paulo_network.private_subnet_ids
   frontend_sg_id        = module.sao_paulo_frontend.frontend_sg_id
-  backend_instance_type = var.backend_config.backend_instance_type[1]  #Using T.3 Micro for Sao Paulo due to geographical hardware limitations
+  backend_instance_type = var.backend_config.backend_instance_type[1] #Using T.3 Micro for Sao Paulo due to geographical hardware limitations
   desired_capacity      = var.backend_config.desired_capacity
   scaling_range         = var.backend_config.scaling_range
   user_data             = var.backend_config.user_data
