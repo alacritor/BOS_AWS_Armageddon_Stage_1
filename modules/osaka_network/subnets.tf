@@ -28,12 +28,12 @@ resource "aws_subnet" "private_1" {
   }
 }
 
-# resource "aws_subnet" "private_2" {
-#   vpc_id                  = aws_vpc.main.id
-#   cidr_block              = var.private_subnet_cidr[1]
-#   availability_zone       = data.aws_availability_zones.available.names[1]
-#   map_public_ip_on_launch = false
-#   tags = {
-#     Name = "${var.name}-private-2"
-#   }
-# }
+resource "aws_subnet" "private_2" {
+  vpc_id                  = aws_vpc.main.id
+  cidr_block              = var.private_subnet_cidr[1]
+  availability_zone       = data.aws_availability_zones.available.names[1]
+  map_public_ip_on_launch = false
+  tags = {
+    Name = "${var.name}-private-2"
+  }
+}

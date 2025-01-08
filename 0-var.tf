@@ -28,7 +28,7 @@ variable "osaka_config" {
     region              = "ap-northeast-3"
     name                = "osaka"
     vpc_cidr            = "10.159.0.0/16"
-    private_subnet_cidr = ["10.159.11.0/24"]
+    private_subnet_cidr = ["10.159.11.0/24", "10.159.12.0/24"]
   }
 }
 
